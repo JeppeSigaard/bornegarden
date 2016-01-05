@@ -12,8 +12,8 @@ require 'functions/bgimage.php';
 
 require 'functions/menu.php';
 
-require 'functions/ct_settings.php';
 require 'functions/tax-meta.php';
 require 'functions/admin.php';
+require 'functions/kirki.php';
 
 ?>
