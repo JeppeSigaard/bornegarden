@@ -1,0 +1,31 @@
+.page-content,
+.single-content{
+
+    padding:70px 0px 100px;
+    max-width:700px;
+    margin:0px auto;
+    overflow: auto;
+
+    main{
+        padding:0px 15px;
+        min-height: 100px;
+        max-width:640px;
+        margin:0px auto;
+
+        h1{
+            display: block;
+            line-height: 55px;
+            height:55px;
+            margin-bottom:10px;
+            font-size:130%;
+            padding:0px 20px;
+            background:$contrast-color-1;
+            color:white;
+        }
+
+        .wp-post-image{
+            margin-bottom: 10px;
+        }
+    }
+}
+
