@@ -1,0 +1,44 @@
+$sa-bg: #333; 
+
+*:hover>.spinning-arrow{
+    transform: rotate(540deg); 
+}
+
+.spinning-arrow{
+  display: block;
+  position: absolute;
+  height:30px;
+  width: 40px;
+  transition: transform 400ms;
+  
+  &:hover{
+    transform: rotate(540deg);
+  }
+  
+  &:before{
+    content:'';
+    display: block;
+    width:25px;
+    height: 10px;
+    position:absolute;
+    top: 10px;
+    left:0;
+    background:$sa-bg;
+  }
+
+  
+  &:after{
+    content:'';
+    display: block;
+    width:0px;
+    height: 0px;
+    position:absolute;
+    top: 3px;
+    left: auto;
+    right: 0;
+    border-left: 15px solid $sa-bg;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+  
+}

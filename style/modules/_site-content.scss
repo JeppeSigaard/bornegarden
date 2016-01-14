@@ -1,13 +1,19 @@
+.home .site-content{
+    padding-bottom: 0;
+}
 .site-content{
     width:100%;
     transition:width $main-menu-transition;
-    padding:75px 10px 10px;
+    padding:73px 0px 10px;
+    border: solid white;
+    border-width: 0px;
     
 }
 @media only screen and(min-width:960px){
     .site-content{
         width:calc(100% - 260px);
-        
+        border-width: 3px 3px 0px 0px;
+        padding-top:105px;
     }
     
     nav.site-nav{
@@ -37,16 +43,8 @@
     }
     .site-content {
         width:80%;
-        background-color: #f5f5f5;
+        background-color: $color-white;
         padding-top:105px;
         padding-bottom:50px;
-        
-        .inner{
-            margin-top:20px;
-            padding:20px;
-            background-color: white;
-            max-width:1080px;
-            margin:auto;
-        }
     }
 }

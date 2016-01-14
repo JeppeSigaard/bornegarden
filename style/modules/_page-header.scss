@@ -1,0 +1,14 @@
+.page-header{
+    @extend %page-max;
+    line-height:35px;
+    font-family: $contrast-font;
+    padding: 20px 0px 40px;
+    
+    .page-title{
+        font-size:40px;
+    }
+    .page-subtitle{
+        font-size:30px;
+    }
+    
+}

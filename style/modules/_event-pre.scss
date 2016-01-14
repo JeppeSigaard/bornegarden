@@ -1,0 +1,38 @@
+.event-pre{
+    display: block;
+    padding: $base-margin*2 $base-margin $base-margin;
+    margin-bottom: 30px;
+    position: relative;
+    
+    &:before{
+        content:'';
+        @extend %fill-all;
+        background-color: rgba(white,.2);
+        z-index:0;
+    }
+    
+    .event-date{
+        font-family: $contrast-font;
+        font-size: 175%;
+    }
+    
+    .event-time{
+        position: absolute;
+        top:$base-margin;
+        right:$base-margin;
+        font-size:80%;
+    }
+    
+    .event-title{
+        color:white;
+        font-weight:700;
+        padding:$base-margin 0;
+        max-width:75%;
+        line-height:1.5;
+    }
+    
+    .spinning-arrow{
+        right: 20px;
+        bottom: 20px;
+    }
+}

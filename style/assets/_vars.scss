@@ -6,12 +6,23 @@ $main-menu-transition:200ms;
 
 /* farver */
 
-$contrast-color-1:#4f625b;
-$contrast-color-2:#72837d;
-$contrast-color-3:#3a4440;
-$contrast-color-4:#dda44a;
-$contrast-color-course:#a58757;
+$color-white: #ffffff;
+$color-light: #f9f9f9;
+
+$contrast-color-1:#a73636;
+$contrast-color-2:#6e6e39;
+$contrast-color-3:#a688a5;
+$contrast-color-4:#73a6b5;
+$contrast-color-5:#9a9238;
+$contrast-color-6:#715f95;
 
 
 $base-font: 'Open Sans', sans-serif;
 $contrast-font: 'kids_futureregular', sans-serif;
+
+
+$page-width-max: 1050px;
+$read-width-max: 640px;
+
+$base-margin: 20px;
+$base-line-height: 1.5;

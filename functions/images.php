@@ -8,4 +8,7 @@ add_image_size('post-preview-tall',300,600,true);
 add_image_size('post-preview-large',600,600,true);
 add_image_size('post-thumbnail-single',640,960,false);
 
+add_image_size('front-gallery-wide',150,300,true);
+add_image_size('front-gallery-tall',300,150,true);
+
 ?>

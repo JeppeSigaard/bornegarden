@@ -1,0 +1,28 @@
+.featured-article{
+    display: block;
+    position: relative;
+    margin-bottom:30px;
+    background-color: $color-light;
+    padding:20px;
+    
+    .featured-image{
+        height:0;
+        background-size: cover;
+        background-position: center;
+        background-color: $contrast-color-1;
+        padding:0 0 56.25%;
+    }
+    
+    .featured-title{
+        font-family: $contrast-font;
+        font-size:150%;
+        line-height: 1.5;
+        padding:$base-margin 0 0;
+    }
+    
+    .spinning-arrow{
+        right: 20px;
+        bottom: 20px;
+    }
+    
+}

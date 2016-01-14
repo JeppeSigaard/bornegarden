@@ -6,21 +6,26 @@
         left:-$main-menu-width;
     }
 }
-header{
+.site-header{
     position:fixed;
     z-index:200;
     top:0;
     left:0;
     right: 0;
     width:100%;
-    border:solid white;
+    border:solid $contrast-color-1;
     border-width:10px 0px;
     text-align:right;
     font-size:0px;
     transition:right $main-menu-transition, left $main-menu-transition;
-    animation:colortrans linear infinite 50s;
+    background:$contrast-color-1;
     overflow: hidden;
+    height:70px;
     
+    @media only screen and(min-width:960px){
+        height:105px;
+    }
+
     @media only screen and(min-width:1600px){
         box-shadow: 1px 1px 5px 0px rgba(0,0,0,.1); 
     }
@@ -51,28 +56,6 @@ header{
         }
     }
 
-    .nav-toggle{
-        vertical-align: top;
-        display: inline-block;
-        cursor: pointer;
-        box-sizing: content-box;
-        width: 35px;
-        height: 20px;
-        padding: 15px 20px;
-        text-align:center;
-        position: relative;
-        border-left: 2px solid white;
-
-        span{
-            margin-top:8px;
-        }
-        
-        @media only screen and(min-width:960px){
-            
-            display: none;
-        }
-        
-    }
 }
 
 .top-logo{
@@ -80,21 +63,24 @@ header{
     padding: 10px;
     display: inline-block;
     float:left;
+    display: inline-block;
     
+    
+    
+    img{
+        max-height:30px;
+        @media only screen and(min-width:960px){
+            
+            max-height:65px;
+        }
+        
+        width:auto;
+        min-width:auto;
+    }
     svg {
         fill: white;
         display: inline-block;
         vertical-align: middle;
-    }
-    
-    .tine-logo{
-        height:30px;
-        width: 30px;
-    }
-    
-    .tine-navn{
-        height:25px;
-        margin-left:10px;
     }
 }
 

@@ -17,5 +17,11 @@ Kirki::add_config( 'smamo_logo', array(
     'option_type'   => 'theme_mod',
 ) );
 
+Kirki::add_config( 'smamo_front_video', array(
+    'capability'    => 'edit_theme_options',
+    'option_type'   => 'theme_mod',
+) );
+
 require 'kirki/info.php';
 require 'kirki/logo.php';
+require 'kirki/video.php';
