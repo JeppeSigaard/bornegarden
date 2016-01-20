@@ -7,7 +7,7 @@
     <div class="page-max">
         <div class="split-container">
             <div class="split featured-articles">
-                <?php get_template_part('template-parts/home/featured-articles');?>
+                <?php get_template_part('template-parts/common/post-list');?>
             </div>
             <div class="split front-calendar">
                 <?php get_template_part('template-parts/home/calendar');?>

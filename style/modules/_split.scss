@@ -1,4 +1,8 @@
 .split-container{
+    @extend section;
+    padding-left: 0;
+    padding-right: 0;
+    
     font-size:0;
     margin:-15px;
 }

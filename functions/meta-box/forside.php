@@ -63,12 +63,14 @@ $mb[] = array(
                 ),
 
                 array(
+                    'class' => 'qtranslate',
                     'name' => __('Overskrift','rwmb'),
                     'id' => 'field_heading',
                     'type' => 'text',
                 ),                
 
                 array(
+                    'class' => 'qtranslate',
                     'name' => 'Tekst',
                     'id'    => 'field_text',
                     'type' => 'textarea',

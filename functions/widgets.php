@@ -21,6 +21,12 @@ $widget_fields['id'] = 'post-widgets';
 $widget_fields['description'] = 'Viser widgets på nyhedssider';
 register_sidebar($widget_fields);
 
+// opret footerområde
+$widget_fields['name'] = 'Footerens widgets';
+$widget_fields['id'] = 'footer-widgets';
+$widget_fields['description'] = 'Viser widgets i sidens footer';
+register_sidebar($widget_fields);
+
 
 
 require 'widgets/register-widget-tax.php';

@@ -1,5 +1,7 @@
-<?php $embed_code = wp_oembed_get( get_theme_mod('smamo_front_video')); if($embed_code) : ?>
+<?php $video_src = get_theme_mod('smamo_front_video'); if($video_src) : ?>
+
 <div class="video-wrap">
-   <?php echo $embed_code; ?>
+    <div id="ytplayer" data-src="<?php echo $video_src ?>"></div>
+    <div class="video-play" id="video-play"></div>
 </div>
 <?php endif; ?>

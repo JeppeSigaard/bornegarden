@@ -62,4 +62,12 @@ article{
     em{
         font-style: italic;
     }
+    
+    a,
+    a:visited,
+    a:active,
+    a:hover{
+        color:$contrast-color-1;
+        text-decoration: underline;
+    }
 }

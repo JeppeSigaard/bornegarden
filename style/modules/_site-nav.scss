@@ -27,6 +27,43 @@
     z-index:1;
     transition:right $main-menu-transition;
     
+    ul:not(.sub-menu)>li{
+        &:nth-child(6n + 1) a{
+            background-color: $contrast-color-2;
+        }
+        
+        &:nth-child(6n + 2) a{
+            background-color: $contrast-color-3;
+        }
+        
+        &:nth-child(6n + 3) a{
+            background-color: $contrast-color-4;
+        }
+        
+        &:nth-child(6n + 4) a{
+            background-color: $contrast-color-5;
+        }
+        
+         &:nth-child(6n + 5) a{
+            background-color: $contrast-color-1;
+        }
+        
+        &:nth-child(6n) a{
+            background-color: $contrast-color-6;
+        }
+        
+    }
+    
+    .toggle-sub .sub-menu {
+        display: none;
+    }
+    
+    .sub-menu a {
+        line-height: 45px;
+        height: 45px;
+        font-size: 100%;
+    }
+    
     ul a{
         display: block;
         margin:0px 0px 3px;
@@ -53,6 +90,7 @@
         &:hover:after{
             background:rgba(white,.2);
         }
+
 
     }
     

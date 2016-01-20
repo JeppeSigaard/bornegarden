@@ -9,7 +9,7 @@
  */
 add_action('wp_update_nav_menu_item', 'color_nav_update',10, 3);
 function color_nav_update($menu_id, $menu_item_db_id, $args ) {
-    if ( is_array($_REQUEST['menu-item-color']) ) {
+    if (isset($_REQUEST['menu-item-color']) && is_array($_REQUEST['menu-item-color']) ) {
         $color_value = $_REQUEST['menu-item-color'][$menu_item_db_id];
         update_post_meta( $menu_item_db_id, '_menu_item_color', $color_value );
     }
@@ -20,7 +20,9 @@ function color_nav_update($menu_id, $menu_item_db_id, $args ) {
  */
 add_filter( 'wp_setup_nav_menu_item','color_nav_item' );
 function color_nav_item($menu_item) {
-    $menu_item->color = get_post_meta( $menu_item->ID, '_menu_item_color', true );
+    if(isset($menu_item->ID)){
+        $menu_item->color = get_post_meta( $menu_item->ID, '_menu_item_color', true );
+    }
     return $menu_item;
 }
 

@@ -1,10 +1,25 @@
-<section class="single-content">
-    <?php while(have_posts()) : the_post();?>
-    <?php $cat = get_the_category($post->ID); $cat_id = $cat[0]->term_id?>
-   <article>
-        <h1><?php the_title(); ?></h1>
-        <?php if(has_post_thumbnail()) : the_post_thumbnail('post-thumbnail-single'); endif; ?>
-        <?php the_content(); ?>
-    </article>
-    <?php endwhile; ?>
+<?php 
+
+while(have_posts()) : the_post();
+   get_template_part('template-parts/common/content');
+endwhile; 
+
+?>
+<section class="featured-articles break">
+    <div class="inner">
+       <?php 
+        
+        if('stue' === get_post_type( get_the_ID() ) ) {
+            
+            get_template_part('template-parts/common/personale');
+            
+        }
+        else{
+            
+            get_template_part('template-parts/common/post-list');
+        
+        }
+        
+        ?>
+    </div>
 </section>

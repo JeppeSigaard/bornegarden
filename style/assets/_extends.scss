@@ -22,9 +22,15 @@
 
 %read-max,
 .read-max{
-    max-width: $page-width-max;
+    max-width: $read-width-max;
     margin-left: auto;
     margin-right: auto;
+    
+    @media only screen and(min-width:1280px){
+        max-width: $read-width-max-large;
+        
+    }
+    
 }
 
 %font-size{
@@ -37,3 +43,4 @@
 %article-font-style{
     line-height:$base-line-height;
 }
+

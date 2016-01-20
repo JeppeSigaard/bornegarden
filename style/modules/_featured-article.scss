@@ -1,10 +1,13 @@
 .featured-article{
+    @extend %font-size;
     display: block;
     position: relative;
-    margin-bottom:30px;
-    background-color: $color-light;
-    padding:20px;
     
+    .inner{
+        margin-bottom:30px;
+        background-color: $color-light;
+        padding:20px;
+    }
     .featured-image{
         height:0;
         background-size: cover;
@@ -23,6 +26,89 @@
     .spinning-arrow{
         right: 20px;
         bottom: 20px;
+    }
+    
+}
+
+.single-stue .featured-articles.break{
+    
+    .medarbejder-header{
+        @extend %font-size;
+        padding:10px;
+        font-family: $contrast-font;
+        
+        
+        h3{
+            font-size:175%;
+        }
+    }
+    
+    &:before{
+        display: none;
+    }
+}
+
+.featured-articles.break{
+    font-size:0;
+    overflow-x: hidden;
+    @extend %read-max;
+      
+    &:before{
+        content:'';
+        display: block;
+        border-top: 1px solid $monkey-black-2;
+        margin: 0px 0px 20px;
+
+        @media only screen and(min-width:640px){  
+            margin: 0px 10px 20px;
+        }
+    }
+    
+    &.archive{
+        padding-left:10px;
+        padding-right:10px;
+        
+        &:before{
+            display: none;
+        
+        }
+    }
+
+    
+    .spinning-arrow{
+        display: none;
+    }
+    
+   
+    
+    @media only screen and(min-width:640px){
+        
+        &:before{
+            margin: 0px 10px 20px;
+        }
+
+        
+        .featured-article{
+            vertical-align: top;
+            display: inline-block;
+            width: 50%;
+            padding:10px;
+            
+        }   
+    } 
+    
+    @media only screen and(min-width:680px){
+        
+        &:before{
+            margin: 0px 0px 20px;
+        }
+        
+        padding: 20px 0px;
+        
+        >.inner{
+            margin:0 -10px;
+        }
+        
     }
     
 }

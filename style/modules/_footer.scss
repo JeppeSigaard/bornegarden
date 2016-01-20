@@ -3,6 +3,10 @@ footer{
     padding:60px 20px 80px;
     background-color: $contrast-color-1;
     
+    a,a:active,a:visited,a:hover{
+        text-decoration: underline;
+    }
+    
 }
 
 
@@ -10,3 +14,48 @@ footer{
     
     @extend .page-header;
 }
+
+.footer-content{
+    @extend .page-header;
+    
+    
+    .widget{
+        padding-left: 0px;
+        padding-right: 0px;
+       
+    }
+    
+    .footer-menu p,
+    .footer-menu ul{
+        padding-bottom: $base-margin; 
+        li {
+            line-height: 1.5;    
+        }
+    }
+    
+}
+
+@media only screen and(min-width:520px){
+    
+    .footer-menu,
+    .footer-widget{
+        display: inline-block;
+        vertical-align: top;
+        
+        .widget{
+            padding-top:0px;
+        }
+        
+    }
+    
+    
+    
+    .footer-widget{
+        float: right;
+        width:320px;
+    
+    }
+    
+    
+}
+
